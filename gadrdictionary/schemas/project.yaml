@@ -149,3 +149,7 @@ properties:
   contact:
     description: Contact info (preferable e-mail address) e.g. name@institution.ac.nz
     type: string
+
+  details:
+    type: string 
+    description: More detailed description of the project.

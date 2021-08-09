@@ -153,3 +153,9 @@ properties:
   details:
     type: string 
     description: More detailed description of the project.
+
+  application_form:
+    type: 
+      - string
+      - null
+    description: URL to request data access

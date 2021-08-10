@@ -309,10 +309,12 @@ organism_properties:
     type: string 
     description: >
       Geographical origin of the sample; use the appropriate name from this list http://www.insdc.org/documents/country-qualifier-vocabulary. Use a colon to separate the country or ocean from more detailed information about the location, eg "Canada: Vancouver" or "Germany: halfway down Zugspitze, Alps"
-  lat_lon:
-    type: string 
-    description: The geographical coordinates of the location where the sample was collected. Specify as degrees latitude and longitude in format "d[d.dddd] N|S d[dd.dddd] W|E", eg, 38.98 N 77.11 W
-    # todo: validate with regex
+  latitude_decimal_degrees:
+    type: number 
+    description: The geographical latitude coorinate of the location where the sample was collected, ranging from -90 (south of the equator) to 90 (north of the equator). Specify as degrees latitude in format -d[d.dddd] or d[d.ddd].
+  longitude_decimal_degrees:
+    type: number 
+    description: The geographical longitude coorinate of the location where the sample was collected, ranging from -180 (west of the prime meridian) to 180 (east of the prime meridian). Specify as degrees longitude in format -d[dd.dddd] or d[dd.ddd].
   collected_by:
     type: string
     description: >

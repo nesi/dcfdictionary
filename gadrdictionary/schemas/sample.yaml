@@ -87,6 +87,3 @@ properties:
 
   experiments:
     $ref: "_definitions.yaml#/to_one"
-
-  decimal_latitude:
-    type: string
